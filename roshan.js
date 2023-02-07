@@ -10,7 +10,7 @@ function roshan(x){
     timermin = x + 5
     timeravg = x + 8
     timermax = x + 11
-    var result = String("Min: " + timermin) + " " + String("AVG: " + timeravg) + " " +  String("Max: " + timermax);
+    var result = String("Min: " + timermin + ",") + " " + String("AVG: " + timeravg + ",") + " " +  String("Max: " + timermax);
 
     // Код для копирования результата в буфер обмена
     const el = document.createElement('textarea');
