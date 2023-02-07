@@ -1,4 +1,5 @@
 var timermin = 0;
+var timeravg = 0;
 var timermax = 0;
 
 function roshan(x){
@@ -6,9 +7,10 @@ function roshan(x){
     do {
       x = Number(prompt('Введите минуту'));
     } while (!x);
-    timermin = x + 8
+    timermin = x + 5
+    timeravg = x + 8
     timermax = x + 11
-    var result = String("Min: " + timermin) + " " +  String("Max: " + timermax)
+    var result = String("Min: " + timermin) + " " + String("AVG: " + timeravg) + " " +  String("Max: " + timermax);
 
     // Код для копирования результата в буфер обмена
     const el = document.createElement('textarea');
